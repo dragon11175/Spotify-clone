@@ -1,4 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 html {
   height: 100%;
   width: 100%;
 }
+
+body{
+  background-color:antiquewhite;
+  height:90%;
+  background-image:url("outline.jpg")
+  
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+nav{
+  font-family:'ubuntu', sans-serif;
+  }
+
+nav ul{
+  display: flex;
+  align-items:center;
+  list-style-type:none;
+  height:60px;
+  background-color:black;
+  color:white;
+}
+
+nav ul li{
+  padding: 0 12px;
+}
+.brand img{
+  width:44px;
+  padding:0 8px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  font-weight:bolder;
+  font-size:25px;
+}
+
+.container{
+  font-family:'varela round',sans-serif;
+  min-height:65vh;
+  background-color:black;;
+  color:white;
+  display:flex;
+  margin:10px auto;
+  width:80%;
+  border-radius:10px;
+  padding:10px;
+  background-image: url("agent.jpeg");
+  background-size:cover;
+  font-size:10px;
+  height:68%;
+}
+
+#progressbar{
+  width:80vw;
+  cursor:pointer;
+}
+
+.bottom{
+  position:sticky;
+  height:100px;
+  background-color:black;
+  color:white;
+  bottom:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.icon{
+  margin-top:10px;
+}
+.icon i{
+  cursor:pointer;
+}
+.songItem{
+  height:50px;
+  display:flex;
+  color:white;
+  margin:10px 0;
+  justify-content:space-between;
+  align-items: center;
+  border-radius:20px;
+  background-color:black;
+}
+.songItem img{
+  width:50px;
+  margin:0 23px;
+  }
+.timestamp{
+  margin:0 23px;
+  cursor:pointer;
+}
+.songItemcontainer{
+  display:overflow;
+  height:57vh;
+  margin-top: 23px;
+  padding:0px 10px;
+  overflow:auto;
+}
+
+.songinfo{
+  position:absolute;
+  left:10vw;
+}
+
+.songinfo img{
+  opacity:0;
+  transition:opacity 1s ease-in;
+}
+
+@media (max-width:500px){
+  .container{
+    font-family:'varela round',sans-serif;
+    min-height:100%;
+    background-color:black;;
+    color:white;
+    display:flex;
+    margin:0px;
+    width:100%;
+    border-radius:0px;
+    padding:0px;
+    background-image: url("mobile.jpg");
+    font-size:10px;
+    height:0px;
+    padding-top:10px;
+  }
+  body{
+    height:77%;
+  }
+  .songItemcontainer{
+    display:overflow;
+    height:65vh;
+    margin-top: 23px;
+    padding:0px 10px;
+    overflow:auto;
+  }
+
+  .bottom{
+    position:sticky;
+    height:80px;
+    background-color:black;
+    color:white;
+    bottom:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
+
+}
+
+
